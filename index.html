@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <div class="main_container">
+        <div class="top">
+          <div class="bill">
+            <h3>Bill</h3>
+            <input type="number" placeholder="bill" id="bill_input" />
+          </div>
+          <div class="select_tip">
+            <h3>Select Tip %</h3>
+            <div class="procent_container">
+              <button class="button">5%</button>
+              <button class="button">10%</button>
+              <button class="button fifteen">15%</button>
+              <button class="button">25%</button>
+              <button class="button">50%</button>
+              <button class="button custom">Custom</button>
+            </div>
+          </div>
+          <div class="number_of_people">
+            <h3>Number of People</h3>
+            <input
+              type="number"
+              placeholder="number of people"
+              id="people_input"
+            />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="bottom_container">
+            <div class="tip_amount">
+              <div class="tip">
+                <h3>Tip Amount</h3>
+                <h5>/ person</h5>
+              </div>
+              <span id="tip_amount">$0.00</span>
+            </div>
+            <div class="total_cont">
+              <div class="total">
+                <h3>Total</h3>
+                <h5>/ person</h5>
+              </div>
+              <span id="total_amount">$0.00</span>
+            </div>
+            <button id="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
